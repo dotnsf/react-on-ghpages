@@ -12,9 +12,9 @@ const Router = () => {
   return (
     <React.Fragment>
       <Routes>
-        <Route path={`/`} element={<Page0 />} />
-        <Route path={`/a`} element={<PageA />} />
-        <Route path={`/b`} element={<PageB />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Page0 />} />
+        <Route path={`${process.env.PUBLIC_URL}/a`} element={<PageA />} />
+        <Route path={`${process.env.PUBLIC_URL}/b`} element={<PageB />} />
       </Routes>
     </React.Fragment>
   );

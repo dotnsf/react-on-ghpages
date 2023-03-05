@@ -5,11 +5,11 @@ const PageA = () => {
   const navigate = useNavigate();
 
   const Action0 = async () => {
-    navigate(`/`);
+    navigate(`${process.env.PUBLIC_URL}/`);
   }
 
   const ActionB = async () => {
-    navigate(`/b`);
+    navigate(`${process.env.PUBLIC_URL}/b`);
   }
 
   useEffect(() => {
